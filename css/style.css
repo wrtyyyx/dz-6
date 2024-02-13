@@ -54,6 +54,12 @@
         margin: 0 auto;
     }
 
+    .clearfix::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+
     .container div{
         outline: 3px solid red;
         
@@ -77,12 +83,12 @@
         font-size: 20px;
         width: 400px;
         height: 400px;
-        display: inline-block;
+        float: left;
     }
 
     .first-block, .second-block {
         font-size: 20px;
-        display: inline-block;
+        float: left;
         width: 800px;
 
     }
@@ -100,7 +106,7 @@
     }
 
     .third > div{
-        display: inline-block;
+        float: left;
         font-size: 20px;
         width: 400px;
         height: 400px;
@@ -121,7 +127,7 @@
 
     .third-right-two > div{
         height: 200px;
-        display: inline-block;
+        float: left;
         width: 400px;
         font-size: 20px;
     }
